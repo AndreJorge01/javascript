@@ -28,4 +28,4 @@ var carro,
  pais,
  estado;
 
-console.log(nome, idade, comidaFavorita);
+
