@@ -54,33 +54,33 @@ switch (corFavorita) {
 if (false)
   if (0)
     if (NaN)
-      // ou -0
       if (null)
         if (undefined)
           if ("")
             if (true)
-              // ou "" ou ``
-              //Todo o resto é truthy
-
-              // Truthy
               if (1)
+                // ou -0
                 if (" ")
                   if ("andre")
                     if (-5)
                       if ({})
+                        // ou "" ou ``
+                        //Todo o resto é truthy
+
+                        // Truthy
                         if (!true)
-                          //Operador Lógico de Negação !
-                          //O operador !, nega uma operação booleana. Ou seja, !true é igual a false
-                          // Truthy
                           if (!1)
-                            // false
                             if (!"")
-                              // false
                               if (!undefined)
-                                // true
                                 if (!!" ")
-                                  // true
                                   if (!!"")
+                                    //Operador Lógico de Negação !
+                                    //O operador !, nega uma operação booleana. Ou seja, !true é igual a false
+                                    // Truthy
+                                    // false
+                                    // false
+                                    // true
+                                    // true
                                     // true
                                     // false
                                     //Dica, você pode utilizar o !! para verificar se uma expressão é Truthy ou Falsy
@@ -126,12 +126,23 @@ false || true; // true
 5 >= 5 || 3 < 6; // true
 //Retorna o primeiro valor true que encontrar
 
-Exercício;
+//Exercício;
 // Verifique se a sua idade é maior do que a de algum parente
 // Dependendo do resultado coloque no console 'É maior', 'É igual' ou 'É menor'
+var minhaIdade = 22;
+var idadePai = 53;
+
+if (minhaIdade >= idadePai) {
+  console.log("É maior");
+} else if (minhaIdade === idadePai) {
+  console.log("É igual");
+} else {
+  console.log("É menor");
+}
 
 // Qual valor é retornado na seguinte expressão?
 var expressao = 5 - 2 && 5 - " " && 5 - 2;
+console.log(expressao);
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
 var nome = "Andre";
@@ -139,10 +150,27 @@ var idade = 28;
 var possuiDoutorado = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
+var empregoFuturo;
+console.log(
+  !!nome,
+  !!idade,
+  !!possuiDoutorado,
+  !!empregoFuturo,
+  !!dinheiroNaConta,
+  !!empregoFuturo
+);
 
 // Compare o total de habitantes do Brasil com China (valor em milhões)
 var brasil = 207;
 var china = 1340;
+
+if (brasil >= china) {
+  console.log("Brasil tem mais habitantes");
+} else if (brasil === china) {
+  console.log("Brasil e China tem a mesma quantidade de habitantes");
+} else {
+  console.log("Brasil tem menos habitantes que a China");
+}
 
 // O que irá aparecer no console?
 if ("Gato" === "gato" && 5 > 2) {
